@@ -87,7 +87,6 @@ const Shop = () => {
         })
             .then(response => response.ok ? response.json() : Promise.reject(response))
             .then(data => {
-                console.log(data);
                 setGoods(data.shop)
                 setLoading(false)
             })
