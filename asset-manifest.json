@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-fortniteapi-shop/static/css/main.6a47d584.chunk.css",
+    "main.js": "/react-fortniteapi-shop/static/js/main.602cf3a3.chunk.js",
+    "main.js.map": "/react-fortniteapi-shop/static/js/main.602cf3a3.chunk.js.map",
+    "runtime-main.js": "/react-fortniteapi-shop/static/js/runtime-main.7aa6a87d.js",
+    "runtime-main.js.map": "/react-fortniteapi-shop/static/js/runtime-main.7aa6a87d.js.map",
+    "static/js/2.321e96af.chunk.js": "/react-fortniteapi-shop/static/js/2.321e96af.chunk.js",
+    "static/js/2.321e96af.chunk.js.map": "/react-fortniteapi-shop/static/js/2.321e96af.chunk.js.map",
+    "index.html": "/react-fortniteapi-shop/index.html",
+    "static/css/main.6a47d584.chunk.css.map": "/react-fortniteapi-shop/static/css/main.6a47d584.chunk.css.map",
+    "static/js/2.321e96af.chunk.js.LICENSE.txt": "/react-fortniteapi-shop/static/js/2.321e96af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7aa6a87d.js",
+    "static/js/2.321e96af.chunk.js",
+    "static/css/main.6a47d584.chunk.css",
+    "static/js/main.602cf3a3.chunk.js"
+  ]
+}
