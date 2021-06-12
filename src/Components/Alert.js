@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 const Alert = ({ name, closeAlert }) => {
     const toastOut = useRef()
     const timerId = useRef()
-
+    const ww = window.innerWidth
     useEffect(() => {
         if (name.length < 5) {
             toastOut.current = setTimeout(() => {
@@ -25,7 +25,7 @@ const Alert = ({ name, closeAlert }) => {
     
     return (
         <div className="toast-block">
-            {name.map((t, ind) => <div key={t.id} id="toast-container" style={{top: `${ind * 60}px`}}>
+            {name.map((t, ind) => <div key={t.id} id="toast-container" style={{top: `${ww <= 400 ? ind * 80 : ind * 60}px`}}>
                     <div className="toast">{t.name} добавлен в корзину!</div>
                 </div>
             )}

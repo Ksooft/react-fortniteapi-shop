@@ -43,7 +43,7 @@ nav {
   display: flex;
   position: fixed;
   
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -128,7 +128,12 @@ nav {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+  .toast-block {
+    top: 90px;
+    right: auto;
+  }
   #toast-container {
+    right: 7rem;
     left: auto;
   }
 }
@@ -141,23 +146,26 @@ nav {
 }
 
 @media (max-width: 767px) {
+  .collection {
+    min-width: 86%;
+    max-width: 96%;
+  }
   #toast-container {
-    min-width: 350px;
-    left: 50%;
-    transform: translateX(-50%);
+    min-width: auto;
     right: auto;
-    margin-left: auto;
-    margin-right: auto;
+    left: 50%;
+    margin-left: -25%;
   }
 }
 
 @media (max-width: 400px) {
-  #toast-container {
-    min-width: 250px;
-  }
   .toast {
-    width: 200px;
+    max-width: 200px;
     margin: 0 auto;
+  }
+  .collection {
+    min-width: 92%;
+    max-width: 97%;
   }
 }
 
