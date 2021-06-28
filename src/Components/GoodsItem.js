@@ -1,10 +1,14 @@
+import { useContext } from 'react'
+import { ShopContext } from '../Context/context'
 import TagsRarity from './TagsRarity'
 
 const GoodsItem = (props) => {
-    const {desc, name, id, price, img, rarity, addToBasket} = props
+    const {desc, name, id, price, img, rarity} = props
+    const {addToBasket} = useContext(ShopContext)
     const colors = ['3D217A', 'F04482', 'BFA499', 'C27643', '91C0CB', '82CD99', 'F57A16', '6B566B', '0FD1E6', '6AFC17', 'C1BE3A', 'FCF9A4', '002FB1', 'F57060', '8184E6']
     const randomColors = () => Math.floor(0 + Math.random() * (14 + 1 - 0))
     const defaultImg = `https://dummyimage.com/1024/${colors[randomColors()]}/ffffff.png&text=${name}`
+
     return (
         <div className="card" id={id}>
             <div className="card-image">
